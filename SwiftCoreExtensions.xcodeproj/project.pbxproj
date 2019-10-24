@@ -13,7 +13,6 @@
 		F3D096B82361F060001CA327 /* UIImage+ColorMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096A22361F060001CA327 /* UIImage+ColorMask.swift */; };
 		F3D096B92361F060001CA327 /* Decodable+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096A32361F060001CA327 /* Decodable+Any.swift */; };
 		F3D096BA2361F060001CA327 /* NSMutableAttributedString+Tappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096A42361F060001CA327 /* NSMutableAttributedString+Tappable.swift */; };
-		F3D096BB2361F060001CA327 /* URL+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096A52361F060001CA327 /* URL+App.swift */; };
 		F3D096BC2361F060001CA327 /* Dictionary+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096A62361F060001CA327 /* Dictionary+String.swift */; };
 		F3D096BD2361F060001CA327 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096A72361F060001CA327 /* Date+Additions.swift */; };
 		F3D096BE2361F060001CA327 /* String+Byte.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096A82361F060001CA327 /* String+Byte.swift */; };
@@ -42,7 +41,6 @@
 		F3D096A22361F060001CA327 /* UIImage+ColorMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ColorMask.swift"; sourceTree = "<group>"; };
 		F3D096A32361F060001CA327 /* Decodable+Any.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decodable+Any.swift"; sourceTree = "<group>"; };
 		F3D096A42361F060001CA327 /* NSMutableAttributedString+Tappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Tappable.swift"; sourceTree = "<group>"; };
-		F3D096A52361F060001CA327 /* URL+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+App.swift"; sourceTree = "<group>"; };
 		F3D096A62361F060001CA327 /* Dictionary+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+String.swift"; sourceTree = "<group>"; };
 		F3D096A72361F060001CA327 /* Date+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
 		F3D096A82361F060001CA327 /* String+Byte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Byte.swift"; sourceTree = "<group>"; };
@@ -102,29 +100,28 @@
 		F3D0969F2361F060001CA327 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F3D096AF2361F060001CA327 /* Data+AES.swift */,
+				F3D096A72361F060001CA327 /* Date+Additions.swift */,
+				F3D096A32361F060001CA327 /* Decodable+Any.swift */,
+				F3D096A62361F060001CA327 /* Dictionary+String.swift */,
 				F3D096A02361F060001CA327 /* Error+Message.swift */,
 				F3D096A12361F060001CA327 /* Encodable+Any.swift */,
-				F3D096A22361F060001CA327 /* UIImage+ColorMask.swift */,
-				F3D096A32361F060001CA327 /* Decodable+Any.swift */,
 				F3D096A42361F060001CA327 /* NSMutableAttributedString+Tappable.swift */,
-				F3D096A52361F060001CA327 /* URL+App.swift */,
-				F3D096A62361F060001CA327 /* Dictionary+String.swift */,
-				F3D096A72361F060001CA327 /* Date+Additions.swift */,
 				F3D096A82361F060001CA327 /* String+Byte.swift */,
-				F3D096A92361F060001CA327 /* UIImage+ColorExtraction.swift */,
-				F3D096AA2361F060001CA327 /* UIView+Transition.swift */,
-				F3D096AB2361F060001CA327 /* UIView+DropShadow.swift */,
 				F3D096AC2361F060001CA327 /* String+CamelCase.swift */,
-				F3D096AD2361F060001CA327 /* UIImage+AnimatedGif.swift */,
-				F3D096AE2361F060001CA327 /* Timer+AppIntervals.swift */,
-				F3D096AF2361F060001CA327 /* Data+AES.swift */,
-				F3D096B02361F060001CA327 /* String+Validation.swift */,
-				F3D096B12361F060001CA327 /* UIImage+Code128.swift */,
 				F3D096B22361F060001CA327 /* String+CountryFlag.swift */,
-				F3D096B32361F060001CA327 /* UIControl+ClosureAction.swift */,
 				F3D096B42361F060001CA327 /* String+Localization.swift */,
-				F3D096CC2361F1A5001CA327 /* UIApplication+Window.swift */,
+				F3D096B02361F060001CA327 /* String+Validation.swift */,
+				F3D096AE2361F060001CA327 /* Timer+AppIntervals.swift */,
 				F3D096B52361F060001CA327 /* UIApplication+RootView.swift */,
+				F3D096CC2361F1A5001CA327 /* UIApplication+Window.swift */,
+				F3D096B32361F060001CA327 /* UIControl+ClosureAction.swift */,
+				F3D096AD2361F060001CA327 /* UIImage+AnimatedGif.swift */,
+				F3D096B12361F060001CA327 /* UIImage+Code128.swift */,
+				F3D096A92361F060001CA327 /* UIImage+ColorExtraction.swift */,
+				F3D096A22361F060001CA327 /* UIImage+ColorMask.swift */,
+				F3D096AB2361F060001CA327 /* UIView+DropShadow.swift */,
+				F3D096AA2361F060001CA327 /* UIView+Transition.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -217,7 +214,6 @@
 				F3D096BA2361F060001CA327 /* NSMutableAttributedString+Tappable.swift in Sources */,
 				F3D096C02361F060001CA327 /* UIView+Transition.swift in Sources */,
 				F3D096C32361F060001CA327 /* UIImage+AnimatedGif.swift in Sources */,
-				F3D096BB2361F060001CA327 /* URL+App.swift in Sources */,
 				F3D096C52361F060001CA327 /* Data+AES.swift in Sources */,
 				F3D096B92361F060001CA327 /* Decodable+Any.swift in Sources */,
 				F3D096CA2361F060001CA327 /* String+Localization.swift in Sources */,
