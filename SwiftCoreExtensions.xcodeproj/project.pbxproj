@@ -21,7 +21,6 @@
 		F3D096C12361F060001CA327 /* UIView+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096AB2361F060001CA327 /* UIView+DropShadow.swift */; };
 		F3D096C22361F060001CA327 /* String+CamelCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096AC2361F060001CA327 /* String+CamelCase.swift */; };
 		F3D096C32361F060001CA327 /* UIImage+AnimatedGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096AD2361F060001CA327 /* UIImage+AnimatedGif.swift */; };
-		F3D096C42361F060001CA327 /* Timer+AppIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096AE2361F060001CA327 /* Timer+AppIntervals.swift */; };
 		F3D096C52361F060001CA327 /* Data+AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096AF2361F060001CA327 /* Data+AES.swift */; };
 		F3D096C62361F060001CA327 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096B02361F060001CA327 /* String+Validation.swift */; };
 		F3D096C72361F060001CA327 /* UIImage+Code128.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096B12361F060001CA327 /* UIImage+Code128.swift */; };
@@ -49,7 +48,6 @@
 		F3D096AB2361F060001CA327 /* UIView+DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DropShadow.swift"; sourceTree = "<group>"; };
 		F3D096AC2361F060001CA327 /* String+CamelCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CamelCase.swift"; sourceTree = "<group>"; };
 		F3D096AD2361F060001CA327 /* UIImage+AnimatedGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+AnimatedGif.swift"; sourceTree = "<group>"; };
-		F3D096AE2361F060001CA327 /* Timer+AppIntervals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+AppIntervals.swift"; sourceTree = "<group>"; };
 		F3D096AF2361F060001CA327 /* Data+AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+AES.swift"; sourceTree = "<group>"; };
 		F3D096B02361F060001CA327 /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
 		F3D096B12361F060001CA327 /* UIImage+Code128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Code128.swift"; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				F3D096B22361F060001CA327 /* String+CountryFlag.swift */,
 				F3D096B42361F060001CA327 /* String+Localization.swift */,
 				F3D096B02361F060001CA327 /* String+Validation.swift */,
-				F3D096AE2361F060001CA327 /* Timer+AppIntervals.swift */,
 				F3D096B52361F060001CA327 /* UIApplication+RootView.swift */,
 				F3D096CC2361F1A5001CA327 /* UIApplication+Window.swift */,
 				F3D096B32361F060001CA327 /* UIControl+ClosureAction.swift */,
@@ -221,7 +218,6 @@
 				F3D096C22361F060001CA327 /* String+CamelCase.swift in Sources */,
 				F3D096B82361F060001CA327 /* UIImage+ColorMask.swift in Sources */,
 				F3D096B72361F060001CA327 /* Encodable+Any.swift in Sources */,
-				F3D096C42361F060001CA327 /* Timer+AppIntervals.swift in Sources */,
 				F3D096C12361F060001CA327 /* UIView+DropShadow.swift in Sources */,
 				F3D096CD2361F1A5001CA327 /* UIApplication+Window.swift in Sources */,
 				F3D096B62361F060001CA327 /* Error+Message.swift in Sources */,
