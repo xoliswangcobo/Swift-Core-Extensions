@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
 
     convenience init?(barcode: String) {
         let data = barcode.data(using: .ascii)

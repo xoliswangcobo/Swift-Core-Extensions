@@ -18,9 +18,9 @@
 import UIKit
 import ImageIO
 
-extension UIImageView {
+public extension UIImageView {
     
-    public func loadGif(name: String) {
+    func loadGif(name: String) {
         DispatchQueue.global().async {
             let image = UIImage.gif(name: name)
             DispatchQueue.main.async {
@@ -30,7 +30,7 @@ extension UIImageView {
     }
     
     @available(iOS 9.0, *)
-    public func loadGif(asset: String) {
+    func loadGif(asset: String) {
         DispatchQueue.global().async {
             let image = UIImage.gif(asset: asset)
             DispatchQueue.main.async {

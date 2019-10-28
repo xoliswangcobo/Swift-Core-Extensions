@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIApplication {
+public extension UIApplication {
     
     var keyWindow:UIWindow? {
         return UIApplication.shared.windows.first { $0.isKeyWindow }

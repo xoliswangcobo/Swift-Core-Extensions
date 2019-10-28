@@ -10,7 +10,7 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     
     var second:Int { return Calendar.current.component(.second, from:self) }
     var minute:Int { return Calendar.current.component(.minute, from:self) }

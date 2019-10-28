@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     func camelCaseToWords() -> String {
         return unicodeScalars.reduce("") {
             if CharacterSet.uppercaseLetters.contains($1) {

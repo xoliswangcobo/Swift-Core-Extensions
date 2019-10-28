@@ -8,15 +8,15 @@
 
 import UIKit
 
-extension NSMutableAttributedString {
+public extension NSMutableAttributedString {
     
-    public struct AttributeSet {
+    struct AttributeSet {
         let link:String
         let stringValue:String
         let color:UIColor
     }
     
-    public func addAttributeSets(attributeSets:[AttributeSet]) {
+    func addAttributeSets(attributeSets:[AttributeSet]) {
         let str:NSString = self.string as NSString
         
         for attributeSet in attributeSets {

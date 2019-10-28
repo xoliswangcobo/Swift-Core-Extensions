@@ -9,7 +9,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     static func emojiFlag(regionCode: String) -> String? {
         let code = regionCode.uppercased()
         

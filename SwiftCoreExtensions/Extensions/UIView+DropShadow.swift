@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     
     func addDropShadowToView() {
         self.layer.masksToBounds =  false

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Encodable {
+public extension Encodable {
     static func encode<T: Encodable>(decoded:T?) -> Any? {
         do {
             let encoded = try JSONEncoder().encode(decoded)

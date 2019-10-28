@@ -30,7 +30,7 @@ extension NSDictionary: JSONSerializableCollection { }
 
 extension NSArray: JSONSerializableCollection { }
 
-extension Decodable {
+public extension Decodable {
     static func decode<T: Decodable>(_ jsonCollection:Any?) -> T? {
         if let theData = jsonCollection as? JSONSerializableCollection {
             do {

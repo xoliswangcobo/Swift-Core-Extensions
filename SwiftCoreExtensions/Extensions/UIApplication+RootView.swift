@@ -9,12 +9,12 @@
 
 import UIKit
 
-extension UIApplication {
+public extension UIApplication {
     
     static var loginAnimation: UIView.AnimationOptions = .transitionFlipFromRight
     static var logoutAnimation: UIView.AnimationOptions = .transitionFlipFromLeft
     
-    public static func setRootView(_ viewController: UIViewController,
+    static func setRootView(_ viewController: UIViewController,
                                    options: UIView.AnimationOptions = .transitionFlipFromRight,
                                    animated: Bool = true,
                                    duration: TimeInterval = 0.5,

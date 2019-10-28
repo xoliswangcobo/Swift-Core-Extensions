@@ -10,7 +10,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     
     enum TransitionType: String {
         case TransitionFade = "fade"

@@ -23,7 +23,7 @@ import UIKit
     }
 }
 
-extension UIControl {
+public extension UIControl {
     
     func addAction(controlEvents control :UIControl.Event, ForAction action:@escaping () -> Void) {
         let sleeve = ClosureSleeve(action)

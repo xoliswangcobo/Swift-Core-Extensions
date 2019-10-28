@@ -9,7 +9,7 @@
 import Foundation
 import CommonCrypto
 
-extension Data {
+public extension Data {
     
     func encrypt(key:String) -> Data? {
         return cryptCC(data: self, key: key, operation: kCCEncrypt)
