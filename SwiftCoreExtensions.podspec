@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "Collection of Swift language extensions."
   s.description  = "Collection of Swift language extensions for UIKIt and Foundation classes."
-  s.homepage     = "https://github.com/xoliswangcobo/Swift-Core-Extensions"
+  s.homepage     = "git@github.com:xoliswangcobo/Swift-Core-Extensions.git"
   
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Xoliswa Ngcobo" => "ngcobox@gmail.com" }
