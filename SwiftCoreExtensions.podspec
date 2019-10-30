@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description  = "Collection of Swift language extensions for UIKIt and Foundation classes."
   s.homepage     = "https://github.com/xoliswangcobo/SwiftCoreExtensions"
   
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE.md" }
   s.author       = { "Xoliswa Ngcobo" => "ngcobox@gmail.com" }
   s.ios.deployment_target  = '10.0'
   s.source       = { :git => "https://github.com/xoliswangcobo/SwiftCoreExtensions.git", :tag => "#{s.version}" }
