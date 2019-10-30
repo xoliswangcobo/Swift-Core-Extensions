@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3335F512369B4EB00260F5E /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = F3335F502369B4EB00260F5E /* build.sh */; };
 		F394DD502361CC0500E3BBFE /* SwiftCoreExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F394DD4E2361CC0500E3BBFE /* SwiftCoreExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3D096B62361F060001CA327 /* Error+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096A02361F060001CA327 /* Error+Message.swift */; };
 		F3D096B72361F060001CA327 /* Encodable+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D096A12361F060001CA327 /* Encodable+Any.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3335F502369B4EB00260F5E /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		F394DD4B2361CC0500E3BBFE /* SwiftCoreExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCoreExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F394DD4E2361CC0500E3BBFE /* SwiftCoreExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCoreExtensions.h; sourceTree = "<group>"; };
 		F394DD4F2361CC0500E3BBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				F394DD4D2361CC0500E3BBFE /* SwiftCoreExtensions */,
+				F3335F502369B4EB00260F5E /* build.sh */,
 				F394DD4C2361CC0500E3BBFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3335F512369B4EB00260F5E /* build.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
