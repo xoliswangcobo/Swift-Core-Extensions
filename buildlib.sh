@@ -8,10 +8,17 @@
 #  https://medium.com/onfido-tech/distributing-compiled-swift-frameworks-via-cocoapods-8cb67a584d57
 #  https://unix.stackexchange.com/questions/129391/passing-named-arguments-to-shell-scripts
 #  https://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash
+#  https://stackoverflow.com/questions/5474732/how-can-i-add-a-help-method-to-a-shell-script
 #
 
-# variables
+# usage discription
+usage="Usage: $(basename "$0") [--name value] [--project value] [--scheme value] [--framework value] \n where: \n \
+    --name      XCode library target name. \n \
+    --project   XCode project file path. \n \
+    --scheme    XCode library target scheme name. \n \
+    --framework XCode library target output frameowrk name including '.framework' extension."
 
+# variables
 while [ $# -gt 0 ]; do
 
    if [[ $1 == *"--"* ]]; then
@@ -23,25 +30,28 @@ while [ $# -gt 0 ]; do
 done
 
 # looking for required variables
-
 if [ -z ${name+x} ]; then
-    echo "Lib name is not provided.";
+    echo "\nXCode library target name is not provided.";
+    echo "\n$usage\n"
     exit 10000
 fi
 
 if [ -z ${project+x} ]; then
-    echo "XCode project file is not supplied.";
+    echo "\nXCode project file is not supplied.";
+    echo "\n$usage\n"
     exit 10001
 fi
 
 if [ -z ${scheme+x} ]; then
-    echo "XCode scheme name not supplied.";
-    exit 10000
+    echo "\nXCode scheme name not supplied.";
+    echo "\n$usage\n"
+    exit 10002
 fi
 
 if [ -z ${framework+x} ]; then
-    echo "Lib framework name is not supplied.";
-    exit 10000
+    echo "\nXCode output framework name is not supplied.";
+    echo "\n$usage\n"
+    exit 10003
 fi
 
 # create folder where we place built frameworks
