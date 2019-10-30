@@ -1,22 +1,55 @@
-#!/bin/sh
+#/bin/bash
 
-#  build.sh
-#  SwiftCoreExtensions
+#  buildlib.sh
+#  Build Libs
 #
 #  Created by Xoliswa on 2019/10/30.
-#  Copyright © 2019 AppRoot. All rights reserved.
+#  Copyright © 2019 Xoliswa Ngcobo. All rights reserved.
+#  https://medium.com/onfido-tech/distributing-compiled-swift-frameworks-via-cocoapods-8cb67a584d57
+#  https://unix.stackexchange.com/questions/129391/passing-named-arguments-to-shell-scripts
+#  https://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash
+#
+
+# variables
+
+while [ $# -gt 0 ]; do
+
+   if [[ $1 == *"--"* ]]; then
+        v="${1/--/}"
+        declare $v="$2"
+   fi
+
+  shift
+done
+
+# looking for required variables
+
+if [ -z ${name+x} ]; then
+    echo "Lib name is not provided.";
+    exit 10000
+fi
+
+if [ -z ${project+x} ]; then
+    echo "XCode project file is not supplied.";
+    exit 10001
+fi
+
+if [ -z ${scheme+x} ]; then
+    echo "XCode scheme name not supplied.";
+    exit 10000
+fi
+
+if [ -z ${framework+x} ]; then
+    echo "Lib framework name is not supplied.";
+    exit 10000
+fi
 
 # create folder where we place built frameworks
 mkdir build
 
-name=SwiftCoreExtensions
-project=SwiftCoreExtensions.xcodeproj
-scheme=SwiftCoreExtensions
-framework=SwiftCoreExtensions.framework
-
 # build framework for simulators
 xcodebuild clean build \
-  -project ./$project \
+  -project $project \
   -scheme $scheme \
   -configuration Release \
   -sdk iphonesimulator \
@@ -30,7 +63,7 @@ cp -r derived_data/Build/Products/Release-iphonesimulator/$framework build/simul
 
 #build framework for devices
 xcodebuild clean build \
-  -project ./$project \
+  -project $project \
   -scheme $scheme \
   -configuration Release \
   -sdk iphoneos \
@@ -58,3 +91,4 @@ lipo -create \
   
 # copy simulator Swift public interface to universal framework
 cp build/simulator/$framework/Modules/$name.swiftmodule/* build/universal/$framework/Modules/$name.swiftmodule
+
